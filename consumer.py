@@ -1,9 +1,6 @@
 import pika
 import json
 import config as cfg
-#RABBIT_HOST = 'localhost'
-#QUEUE='topic_name'
-
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host=cfg.RABBIT_HOST))
 channel = connection.channel()
