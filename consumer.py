@@ -23,5 +23,4 @@ def callback(ch, method, properties, body):
 
 # Listen and receive data from queue
 channel.basic_consume(callback, queue=cfg.QUEUE_TOPIC,no_ack=True)
-
 channel.start_consuming()
